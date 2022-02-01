@@ -1,67 +1,79 @@
 html
-    background-color: #fff
+  background-color: #fff
 
 body
-    font-family: 'Montserrat', sans-serif
-    font-size: 2rem
+  font-family: 'Montserrat', sans-serif
+  font-size: 2rem
 
-.container
-    height: 100%
-    width: 100%
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  -webkit-appearance: none
+
 
 #barra-pesquisa
-    padding: 15px
-    border: 1px solid #6598ff
-    border-radius: 24px
-    width: 70%
+  padding: 15px
+  border: 1px solid #6598ff
+  border-radius: 24px
+  width: 70%
 
 #botao-pesquisa
-    margin-left: -50px
-    border: none
-    color: #6598ff
-    background-color: transparent
-    padding: 5px
-    cursor: pointer
+  margin-left: -50px
+  border: none
+  color: #6598ff
+  background-color: transparent
+  padding: 5px
+  cursor: pointer
 
 .pesquisa
-    margin-top: 15px
-    form
-        display: flex
-        justify-content: center
-        align-items: center
+  margin-top: 15px
+  form
+    display: flex
+    justify-content: center
+    align-items: center
 
 .conteudo
-    display: flex
-    justify-content: center
-    margin-top: 15px
+  display: flex
+  justify-content: center
+  margin-top: 15px
 
 #videos
-    cursor: pointer
-    display: flex
-    justify-content: center
-    flex-direction: column
-    width: 60%
+  cursor: pointer
+  display: flex
+  justify-content: center
+  flex-direction: column
+  width: 60%
 
 .card-video
+  display: flex
+  flex-direction: column
+  margin-bottom: 12px
+  padding: 10px
+  background-color: #ededed
+  border-radius: 10px
+  &__texto
     display: flex
-    margin-bottom: 12px
-    padding: 10px
-    background-color: #ededed
-    border-radius: 10px
+    flex-direction: column
+    &::first-child
+      border-bottom: 2px solid #ccc
+      
+@media (min-width: 768px)
+  .card-video
+    flex-direction: row
     &__texto
-        display: flex
-        flex-direction: column
-        border-left: 2px solid #ccc
-        margin-left: 12px
+      margin-left: 12px
+      border-bottom: none
+      border-left: 2px solid #ccc
 
 .video-player
-    width: 500px
+  width: 500px
 
 .titulo-video
-    font-size: 1.2rem
-    font-weight: 600
-    padding: 12px
+  font-size: 1.2rem
+  font-weight: 600
+  padding: 12px
 
 .descricao-video
-    font-size: .8rem
-    padding: 12px
+  font-size: .8rem
+  padding: 12px

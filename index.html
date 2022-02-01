@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,44 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./styles/css/styles.min.css">
 </head>
+
 <body>
-  <nav class="modal-container">
+  <section class="modal-container">
     <div class="modal-wrapper">
       <div class="modal-backdrop"></div>
       <div class="modal-fechar">
         <i class="material-icons">close</i>
       </div>
       <div class="modal-conteudo">
-        <iframe id="iframe-youtube" width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="iframe-youtube" src=""
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <div class="container">
-    <header class="pesquisa">
-      <form>
-        <input class="form-pesquisa" type="search" placeholder="Pesquisar artista ou banda." id="barra-pesquisa"></input>
-        <button class="form-pesquisa" type="submit" id="botao-pesquisa">
-          <i class="material-icons">search</i></button>
-      </form>
-    </header>
-    
-    <main class="conteudo">
-      <div id="videos"></div>
-    </main>
- </div>
- 
+  <header class="pesquisa">
+    <form>
+      <input id="barra-pesquisa" class="form-pesquisa" type="search"
+        placeholder="Pesquisar artista ou banda."></input>
+      <button id="botao-pesquisa" class="form-pesquisa" type="submit">
+        <i class="material-icons">search</i></button>
+    </form>
+  </header>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="./scripts/script.js"></script>
- <script defer src="./scripts/modal.js"></script>
+  <main class="conteudo">
+    <div id="videos"></div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script defer src="./scripts/modal.js"></script>
 </body>
+
 </html>
