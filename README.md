@@ -5,13 +5,13 @@ Tela de busca de artistas e bandas. Submete busca usando as APIs do Youtube, ond
 
 ## Objetivos
 - [ ]  Utilizar '@font-face' para os ícones;
-- [ ]  Um HTML escrito da maneira mais semântica possível (HTML5/5.1)
+- [x]  Um HTML escrito da maneira mais semântica possível (HTML5/5.1)
 - [x]  CSS3/4 - Com um pre processador de CSS (a escolha fica a seu critério, mas por aqui utilizamos SASS)
 - [ ]  Mobile first e layout responsivo
-- [ ]  Também ver a utilização de dependency managers (npm, webpack)
+- [x]  Também ver a utilização de dependency managers (npm, webpack)
 - [x]  Automação de tasks com gulp
 - [ ]  Testes unitários
-- [ ]  Alguma metodologia para definição e organização do seu código CSS
+- [x]  Alguma metodologia para definição e organização do seu código CSS
 - [ ]  Aplicação de animações em css quando possível e tome cuidado com a performance da sua animação :)
 - [ ]  Ver o código rodando live (Bucket estático S3, Heroku, Firebase Hosting)
 - [ ]  Componentização e extensibilidade dos componentes Javascript
