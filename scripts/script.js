@@ -1,6 +1,5 @@
 $(document).ready(function(){
-  const API_KEY = "AIzaSyCXgRXpXKLDAKp_a7K4trZKzbQQNa9pfE4";
-  let video = "";
+  const API_KEY = "AIzaSyD-8UaKRQOq5Slose4vB2JRRKoJ_odqnnY";
 
   $("form").submit(function (event) {
     event.preventDefault();
@@ -16,11 +15,12 @@ $(document).ready(function(){
     $.get("https://www.googleapis.com/youtube/v3/search?key=" + chave + "&type=video&part=snippet&maxResults=" + quantidadeVideos + "&q=" + pesquisa, function(data){
 
       data.items.forEach(item => {
-        let titulo = item.snippet.title;
-        let descricao = item.snippet.description;
-        let thumbnail = item.snippet.thumbnails.default.url;
-        video = `
-          <div class="card-video">
+        const titulo = item.snippet.title;
+        const descricao = item.snippet.description;
+        const thumbnail = item.snippet.thumbnails.default.url;
+        const link = item.id.videoId;
+        const video = `
+          <div class="card-video" data-id="${link}">
             <img src="${thumbnail}">
             <div class="card-video__texto">
               <h2 class="titulo-video"> ${titulo} </h2>
