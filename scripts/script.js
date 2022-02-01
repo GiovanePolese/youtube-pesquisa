@@ -20,13 +20,13 @@ $(document).ready(function(){
         const thumbnail = item.snippet.thumbnails.default.url;
         const link = item.id.videoId;
         const video = `
-          <div class="card-video" data-id="${link}">
-            <img src="${thumbnail}">
-            <div class="card-video__texto">
-              <h2 class="titulo-video"> ${titulo} </h2>
-              <p class="descricao-video"> ${descricao} </p>
-            </div>
-          </div>
+          <article class="card-video" data-id="${link}">
+            <img src="${thumbnail}" alt="${titulo}"/>
+            <section class="card-video__texto">
+              <h2 class="titulo-video">${titulo}</h2>
+              <p class="descricao-video">${descricao}</p>
+            </section>
+          </article>
         `
         $("#videos").append(video);
       });
