@@ -9,8 +9,6 @@ body
 .container
     height: 100%
     width: 100%
-    display: flex
-    justify-content: center
 
 #barra-pesquisa, #botao-pesquisa
     padding: 10px
@@ -19,3 +17,36 @@ body
 
 #botao-pesquisa
     cursor: pointer
+
+.pesquisa
+    display: flex
+    justify-content: center
+
+.conteudo
+    display: flex
+    justify-content: center
+
+#videos
+    display: flex
+    justify-content: center
+    flex-direction: column
+    width: 60%
+
+.card-video
+    display: flex
+    margin-bottom: 12px
+    padding: 10px
+    background-color: #ededed
+    border-radius: 10px
+    &__texto
+        display: flex
+        flex-direction: column
+
+.video-player
+    width: 500px
+
+.titulo-video
+    font-size: 1.2rem
+
+.descricao-video
+    font-size: .8rem

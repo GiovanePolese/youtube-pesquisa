@@ -14,8 +14,20 @@
 </head>
 <body>
   <div class="container">
-    <input type="text" placeholder="Pesquisar artista ou banda." id="barra-pesquisa"></input>
-    <button id="botao-pesquisa">Buscar</button>
+    <section class="pesquisa">
+      <form>
+        <input class="form-pesquisa" type="text" placeholder="Pesquisar artista ou banda." id="barra-pesquisa"></input>
+        <button class="form-pesquisa" type="submit" id="botao-pesquisa">Buscar</button>
+      </form>
+    </section>
+    
+    <section class="conteudo">
+      <div id="videos"></div>
+    </section>
  </div>
+ 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="./scripts/script.js"></script>
 </body>
 </html>
