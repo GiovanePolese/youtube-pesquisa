@@ -1,15 +1,25 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const minify = require('gulp-minify');
 const concat = require('gulp-concat');
 
-const css = {
-    root: 'styles/sass/',
-    dist: 'styles/css/'
+const src = {
+	public: "./public",
+	css: [
+		"./src/styles/reset.sass",
+		"./src/styles/home.sass",
+		"./src/styles/modal.sass"
+	],
+	js: [
+		"./node_modules/jquery/dist/jquery.min.js",
+		"./src/scripts/home.js",
+		"./src/scripts/modal.js"
+	]
 }
 
-gulp.task('sass', function() {
-    return gulp.src(css.root + 'styles.sass')
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(concat("styles.min.css"))
-        .pipe(gulp.dest(css.dist));
+gulp.task('styles', function () {
+	return gulp.src(src.css)
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+		.pipe(concat("styles.min.css"))
+		.pipe(gulp.dest(src.public));
 });
