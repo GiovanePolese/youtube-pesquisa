@@ -1,0 +1,22 @@
+{
+  "name": "youtube-pesquisa",
+  "version": "1.0.0",
+  "description": "youtube search project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanePolese/youtube-pesquisa.git"
+  },
+  "author": "Giovane Polese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovanePolese/youtube-pesquisa/issues"
+  },
+  "homepage": "https://github.com/GiovanePolese/youtube-pesquisa#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
