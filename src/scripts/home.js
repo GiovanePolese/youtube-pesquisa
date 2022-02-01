@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   const API_KEY = "AIzaSyD-8UaKRQOq5Slose4vB2JRRKoJ_odqnnY";
 
   $("form").submit(function (event) {
@@ -32,4 +32,4 @@ $(document).ready(function(){
       });
     });
   }
-})
+});

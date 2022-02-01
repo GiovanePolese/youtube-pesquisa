@@ -23,3 +23,12 @@ gulp.task('styles', function () {
 		.pipe(concat("styles.min.css"))
 		.pipe(gulp.dest(src.public));
 });
+
+gulp.task('scripts', function () {
+  return gulp.src(src.js)
+    .pipe(concat('script.min.js'))
+    .pipe(minify({ noSource: true, ext: '.js' }))
+    .pipe(gulp.dest(src.public));
+});
+
+gulp.task('default', gulp.parallel('styles', 'scripts'));
