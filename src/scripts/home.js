@@ -6,7 +6,7 @@ $(function(){
 
     const pesquisa = $("#barra-pesquisa").val();
 
-    pesquisarVideo(API_KEY, pesquisa, 2);
+    pesquisarVideo(API_KEY, pesquisa, 5);
   })
 
   function pesquisarVideo(chave, pesquisa, quantidadeVideos) {

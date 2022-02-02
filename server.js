@@ -5,5 +5,5 @@ const port = 8080;
 app.use(express.static(`${__dirname}/public`));
 
 app.listen(port, () => {
-  console.log(`🚀 Servidor rodando na porta: ${port}`)
+  console.log(`🚀 Servidor rodando na url: http://localhost:${port}`)
 });
